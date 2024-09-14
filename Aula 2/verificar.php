@@ -7,9 +7,9 @@
     $senha = $_POST ['pass'];
 
     if(isset($usuario) && isset ($senha)) {
-        $sql_codico = "SELECT * FROM cliente WHERE usuario = '$usuario' AND senha = '$senha'";
+        $sql_codigo = "SELECT * FROM cliente WHERE usuario = '$usuario' AND senha = '$senha'";
 
-        $sql_query = $mysqli->query($sql_codico);
+        $sql_query = $mysqli->query($sql_codigo);
 
         $quantidade_linhas = $sql_query->num_rows;
 

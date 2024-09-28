@@ -1,3 +1,10 @@
+<?php
+    include ('../Conexoes/conexao_estoque.php');
+    
+    $sql_codico = 'SELECT * FROM itens';
+    $resultado = $mysqli->query($sql_codico);
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +24,18 @@
                 <th>Quantidade</th>
                 <th>Ações</th>
             </tr>
-
+            <?php
+                if ($resultado->num_rows >= 1){
+                    while ($item = $resultado->fetch_assoc()){
+                        echo '<tr class = "informacoes">';
+                            echo '<td>'.$item['Nome'].'</td>';
+                            echo '<td>'.$item['Quantidade'].'</td>';
+                            echo '<td> <a href = "editar.php?id='.$item['Id'].'">Editar</a> </td>';
+                            echo '<td>Deletar</td>';
+                        echo '</tr>';
+                    }
+                }
+            ?>
         </table>
     </main>
 </body>

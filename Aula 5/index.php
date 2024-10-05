@@ -1,8 +1,8 @@
 <?php
     include ('../Conexoes/conexao_estoque.php');
     
-    $sql_codico = 'SELECT * FROM itens';
-    $resultado = $mysqli->query($sql_codico);
+    $sql_codigo = 'SELECT * FROM itens';
+    $resultado = $mysqli->query($sql_codigo);
     
 ?>
 <!DOCTYPE html>
@@ -30,12 +30,19 @@
                         echo '<tr class = "informacoes">';
                             echo '<td>'.$item['Nome'].'</td>';
                             echo '<td>'.$item['Quantidade'].'</td>';
+                            echo '<td> <a href = "deletar.php?id='.$item['Id'].'">Deletar</a> </td>';
                             echo '<td> <a href = "editar.php?id='.$item['Id'].'">Editar</a> </td>';
-                            echo '<td>Deletar</td>';
                         echo '</tr>';
                     }
                 }
             ?>
+            <tr>
+                <td class = "add" colspan = "4">
+                    <?php
+                    echo '<a type "submit" class = "botao_add" href = "adicionar.php">Adicionar</a>';
+                    ?>
+                </td>
+            </tr>
         </table>
     </main>
 </body>

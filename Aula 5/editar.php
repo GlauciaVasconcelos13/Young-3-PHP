@@ -8,7 +8,21 @@
     $resultado = $mysqli->query($sql_codico);
     $item = $resultado->fetch_assoc();
 
-    // var_dump($resultado);
+    if ($_SERVER['REQUEST_METHOD']== 'POST'){
+        $id = $_POST['id'];
+        $nome = $_POST['nome'];
+        $quantidade = $_POST['quantidade'];
+
+        $sql_codico = "UPDATE itens SET nome='$nome', quantidade='$quantidade' WHERE id='$id'";
+
+        if ($mysqli->query($sql_codico) === TRUE){
+            header ('Location: index.php');
+
+        }
+        else {
+            echo 'Erro ao atualizar, sadness' . $mysqli->error;
+        }
+    }
 
 ?>
 
@@ -21,7 +35,10 @@
 </head>
 <body>
     <h1>Editar Item</h1>
+
+
     <form action="" method="post">
+        <input type="hidden" name="id" value = "<?php echo $id;?>">
         <label for="">Nome</label>
         <input type="text" name="nome" value="<?php echo $item['Nome'];?>" required>
         <input type="number" name="quantidade" value="<?php echo $item['Quantidade']; ?>" required>

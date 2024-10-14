@@ -1,3 +1,10 @@
+<?php
+    include ('../Conexoes/conexao_login.php');
+    
+    $sql_codigo = 'SELECT * FROM itens';
+    $resultado = $mysqli->query($sql_codigo);
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

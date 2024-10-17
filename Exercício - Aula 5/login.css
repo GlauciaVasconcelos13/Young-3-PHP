@@ -39,4 +39,5 @@ h1 {
     font-size: 15px;
     background-color: #97E6AE;
     border: none;
+    cursor: pointer;
 }

@@ -15,7 +15,7 @@
 </head>
 <body>
     <main>
-        <form action="info.php" method = "post">
+        <form action="index.php" method = "post">
             <div class="login">
                 <h1 class="titulo-login">
                     Login do Usuário - Padaria dos sonhos

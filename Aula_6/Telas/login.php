@@ -13,7 +13,7 @@
                 <div>
                     <h1 class = "h1">LOGIN</h1>
                 </div>
-                <form action = "verificar.php" method = "post">
+                <form class="campo_login" action = "verificar.php" method = "post">
                     <div>
                         <label class = "form-label">Usuário: </label>
                         <input name = "user" class = "form-control" type="text" placeholder = "Digite o seu usuário">
@@ -23,7 +23,7 @@
                         <input name = "pass" class = "form-control" type="pass" placeholder = "Digite a sua senha">
                     </div>
                     <div>
-                        <button type="submit" class = "btn btn-info">Entrar</button>
+                        <button type="submit">Entrar</button>
                     </div>
                 </form>
             </div>

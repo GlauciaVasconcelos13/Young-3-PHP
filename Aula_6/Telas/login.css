@@ -17,22 +17,14 @@ body{
     background-color: #9DE697;
 }
 
-h1 {
+.h1 {
     color: #013d3b;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
-}
-
-.login {
-    background-color: #B9E6C6;
-    padding: 30px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #013d3b;
-    font-size: 15px;   
 }
 
-.login button{
+button{
     width: 100%;
     margin: 20px 0px 0px 0px;
     padding: 5px;
@@ -40,4 +32,31 @@ h1 {
     background-color: #97E6AE;
     border: none;
     cursor: pointer;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 5px;
+}
+
+.campo_login{
+    background-color: #b9e6c6a8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #013d3b;
+    font-size: 30px; 
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+    background-color: rgb(253, 253, 239);
+    box-shadow: 2px 2px 3px black;
+}
+
+input:hover {
+    border: solid 2px #013d3b ;
+}
+
+button:hover {
+    border: solid 2px #013d3b ;
 }

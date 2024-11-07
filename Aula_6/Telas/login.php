@@ -24,7 +24,7 @@
                     </div>
                     <div>
                         <button type="submit">Entrar</button>
-                    </div>
+                        </div>
                 </form>
             </div>
         </div>

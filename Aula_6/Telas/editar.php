@@ -16,13 +16,11 @@
 
         if ($mysqli->query($sql_codigo) === TRUE){
             header ('Location: painel.php');
-
         }
         else {
             echo 'Erro ao atualizar!!!!' . $mysqli->error;
         }
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,7 @@
         <input type="hidden" name="id" value = "<?php echo $id;?>">
         <label for="">Nome</label>
         <input type="text" name="nome" value="<?php echo $item['Nome'];?>" placeholder = "Digite o nome do item" required>
-        <input type="number" name="quantidade" value="<?php echo $item['Quantidade']; ?>" placeholder = "Digite o quantidade do item" required>
+        <input type="number" name="quantidade" value="<?php echo $item['Quantidade'];?>" placeholder = "Digite o quantidade do item" required>
         <input class = "salvar" type="submit" value="Salvar" required>
 
     </form>

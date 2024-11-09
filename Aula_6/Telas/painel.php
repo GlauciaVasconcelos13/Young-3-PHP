@@ -18,6 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
+    <link rel="stylesheet" href="painel.css">
 </head>
 <body>
     <h1 class="titulo">
@@ -38,6 +39,7 @@
                             echo '<td>'.$item['quantidade'].'</td>';
                             echo '<td> <a href = "deletar.php?id='.$item['id'].'">Deletar</a> </td>';
                             echo '<td> <a href = "editar.php?id='.$item['id'].'">Editar</a> </td>';
+                            echo '<td> <a href = "login.php?id='.$item['id'].'">Deslogar</a> </td>';
                         echo '</tr>';
                     }
                 }
@@ -45,9 +47,9 @@
             <tr>
                 <td class = "add" colspan = "4">
                     <?php
-                    echo '<a type "submit" class = "botao_add" href = "adicionar.php">Adicionar</a>';
                     echo '<a type "submit" class = "botao_add" href = "deletar.php">Deletar</a>';
                     echo '<a type "submit" class = "botao_add" href = "editar.php">Editar</a>';
+                    echo '<a type "submit" class = "botao_add" href = "editar.php">Deslogar</a>';
                     ?>
                 </td>
             </tr>

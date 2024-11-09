@@ -11,7 +11,6 @@
     $nome = $nome_usuario['nome'];
     $resultado = $mysqli->query($sql_codigo);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

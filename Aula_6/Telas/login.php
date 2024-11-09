@@ -16,15 +16,15 @@
                 <form class="campo_login" action = "verificar.php" method = "post">
                     <div>
                         <label class = "form-label">Usuário: </label>
-                        <input name = "user" class = "form-control" type="text" placeholder = "Digite o seu usuário">
+                        <input name="user" class = "form-control" type="text" placeholder = "Digite o seu usuário">
                     </div>
                     <div>
                         <label class = "form-label">Senha: </label>
-                        <input name = "pass" class = "form-control" type="pass" placeholder = "Digite a sua senha">
+                        <input name="pass" class = "form-control" type="pass" placeholder = "Digite a sua senha">
                     </div>
                     <div>
                         <button type="submit">Entrar</button>
-                        </div>
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,8 +1,10 @@
+<!-- SEM ERRO -->
+
 <?php
     include ('../../Conexoes/conexao_sistema.php');
 
     $id = $_GET['id'];
-    $sql_codigo = "DELETE FROM itens WHERE id='$id'";
+    $sql_codigo = "DELETE item FROM itens WHERE id='$id'";
     if ($mysqli->query($sql_codigo) === TRUE){
         header ('Location: painel.php');
     }

@@ -1,3 +1,4 @@
+<!-- SEM ERRO -->
 <?php
     include ('../../Conexoes/conexao_sistema.php');
     session_start();

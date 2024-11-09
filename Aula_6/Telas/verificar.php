@@ -1,3 +1,5 @@
+<!-- SEM ERRO -->
+
 <?php
     include_once('../../Conexoes/conexao_sistema.php');
 
@@ -18,7 +20,7 @@
 
             $_SESSION['id'] = $resultado ['id'];
             
-            header('Location: painel.php');}
+            header('Location: painel.php?cadastrado=nao');}
         else{
             header('Location: login.php?error');
         }

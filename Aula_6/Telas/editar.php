@@ -1,9 +1,10 @@
+<!-- COM ERRO -->
+
 <?php
-    //Conectar o banco de dados
     include ('../../Conexoes/conexao_sistema.php');
 
     $id = $_GET['id'];
-    $sql_codigo = "SELECT * FROM itens WHERE Id = '$id'";
+    $sql_codigo = "SELECT * FROM itens WHERE id = '$id'";
     $resultado = $mysqli->query($sql_codigo);
     $item = $resultado->fetch_assoc();
 
@@ -38,7 +39,6 @@
         <input type="text" name="nome" value="<?php echo $item['Nome'];?>" placeholder = "Digite o nome do item" required>
         <input type="number" name="quantidade" value="<?php echo $item['Quantidade'];?>" placeholder = "Digite o quantidade do item" required>
         <input class = "salvar" type="submit" value="Salvar" required>
-
     </form>
     <a class = "add" href="painel.php">Voltar</a>
 </body>

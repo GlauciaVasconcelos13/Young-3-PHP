@@ -1,10 +1,13 @@
+<!-- SEM ERRO -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Padaria dos Sonhos</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    
 </head>
 <body>
     <main>
@@ -24,6 +27,9 @@
                     </div>
                     <div>
                         <button type="submit">Entrar</button>
+                    </div>
+                    <div>
+                        <a href = "cadastrar.php">Cadastrar</a>
                     </div>
                 </form>
             </div>

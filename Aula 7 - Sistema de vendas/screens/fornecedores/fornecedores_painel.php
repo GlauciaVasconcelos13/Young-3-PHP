@@ -3,9 +3,13 @@
     
     $sql_codigo = 'SELECT * FROM fornecedores';
     $resultado = $mysqli->query($sql_codigo);
-    var_dump($resultado);
 
-
+    if($resultado->num_rows > 0){
+        $infos = $resultado->fetch_all();
+    }
+    else{
+        $infos = [];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fornecedores - Vendas</title>
-    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="fornecedores.css">
 </head>
 <body>
     <main>
@@ -28,14 +32,28 @@
                 <th>Cidade</th>
                 <th>Ações</th>
             </tr>
+            <?php
+                if(count($infos) == 0){
+                    echo'<tr>
+                            <td colspan = "4">Nada registrado</td>
+                        </tr>';
+                }
+                else {
+                    foreach($infos as $item){
+                        $id = $item[0];
+                        $nome = $item[1];
+                        $cidade = $item[2];
+                        echo'<tr>
+                            <td>'. $id .'</td>
+                            <td>'. $nome .'</td>
+                            <td>'. $cidade .'</td>
+                            <td><a href="">EDITAR</a> | <a href="../../db/deletar_fornecedor.php?id='. $id .'">DELETAR</a></td>
+                        </tr>';
+                    }
+                }
+            ?>
             <tr>
-                <td>1</td>
-                <td>Maria</td>
-                <td>São Paulo</td>
-                <td><a href="">EDITAR</a> | <a href="">DELETAR</a></td>
-            </tr>
-            <tr>
-                <td colspan = "4">Adicionar</td>
+                <td colspan = "4"><a href="formulario.php">Adicionar</a></td>
             </tr>
         </table>
     </main>

@@ -1,4 +1,3 @@
-<!-- SEM ERRO -->
 
 <?php
     include ('../../Conexoes/conexao_sistema.php');

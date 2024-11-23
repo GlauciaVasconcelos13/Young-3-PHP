@@ -74,20 +74,23 @@ if(!$banco_de_dados_existe){
     ];
 
     foreach($tabelas as $nome => $sql){
-        if($mysqli->query($sql)===TRUE){
-            echo "Tabela '$nome' criada!\n";
+        $sql_check_table = "SHOW TABLES LIKE '$nome'";
+        $resultado = $mysqli->query($sql_check_table);
+
+        if($resultado->num_rows == 0){
+            if($mysqli->query($sql)===TRUE){
+                echo "Tabela '$nome' criada!\n";
+            }
+    
+            else{
+                echo "erro ao criar tabela '$nome': ". $mysqli->error . "\n";
+            }    
+        }
+        else{
+            echo "Tabela '$nome' já existente \n";
         }
 
-        else{
-            echo "erro ao criar tabela '$nome': ". $mysqli->error . "\n";
-        }
     }
 }
 
-else{
-    echo "Banco de dados já existente \n";
-}
-
-// FECHA A CONEXÃO
-$mysqli->close();
-?>
+?> 

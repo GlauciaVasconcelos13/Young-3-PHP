@@ -22,7 +22,7 @@
             
             header('Location: painel.php?cadastrado=nao');}
         else{
-            header('Location: login.php?error');
+            header('Location: index.php?error');
         }
     }
 ?>

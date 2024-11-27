@@ -29,7 +29,7 @@
                         <button type="submit">Entrar</button>
                     </div>
                     <div>
-                        <a href = "cadastrar.php">Cadastrar</a>
+                        <a class = "cadastro" href = "cadastrar.php">Cadastrar</a>
                     </div>
                 </form>
             </div>

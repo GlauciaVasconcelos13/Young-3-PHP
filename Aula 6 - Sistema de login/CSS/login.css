@@ -60,3 +60,9 @@ input:hover {
 button:hover {
     border: solid 2px #013d3b ;
 }
+
+.cadastro{
+    color: #013d3b;
+    text-decoration: none;
+    text-align: center;
+}

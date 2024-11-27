@@ -28,8 +28,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Cliente</title>
-    <link rel="stylesheet" href="../../CSS/style.css">
-    <script src="../../JS/script.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css" type = "text/css">
+    <script src="../JS/script.js" defer></script>
 </head>
 <body class = "body">
     <h1>Cadastro</h1>
@@ -40,6 +40,7 @@
         <input type="text" name="user" placeholder = "Crie um usuário" required>
         <label for="">Senha</label>
         <input type="text" name="pass" placeholder = "Crie uma senha" required>
+        <input type="submit" id="cadastro" value = "Cadastrar">
         <input id = "cadastro" type="submit" value = "Cadastrar">
         
     </form>

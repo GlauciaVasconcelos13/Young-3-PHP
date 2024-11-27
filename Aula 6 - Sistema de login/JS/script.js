@@ -1,6 +1,6 @@
-let botao = document.getElementById ('cadastro')
+let cadastrar = document.getElementById ('cadastro')
 
-botao[0].addEventListener('click', clicar)
+cadastrar[0].addEventListener('click', clicar)
 
 function clicar()
 {

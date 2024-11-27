@@ -1,24 +1,10 @@
-<?php
-    require_once '../../connection/conn.php'; // sair da fornecedores ir a aula 7 e entrar em connection e conn
-    
-    $sql_codigo = 'SELECT * FROM fornecedores';
-    $resultado = $mysqli->query($sql_codigo);
-
-    if($resultado->num_rows > 0){
-        $infos = $resultado->fetch_all();
-    }
-    else{
-        $infos = [];
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fornecedores - Vendas</title>
-    <link rel="stylesheet" href="fornecedores.css">
+    <link rel="stylesheet" href="../../CSS/fornecedores.css">
 </head>
 <body>
     <main>
@@ -52,8 +38,8 @@
                     }
                 }
             ?>
-            <tr>
-                <td colspan = "4"><a href="formulario.php">Adicionar</a></td>
+            <tr class="botoes">
+                <td colspan = "4"><<a href="formulario.php">Adicionar</a></td>
             </tr>
         </table>
     </main>

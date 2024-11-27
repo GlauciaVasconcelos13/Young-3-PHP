@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+}
+
+body {
+    background-color: #eff0d5;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+form {
+    background-color: #c4d4ab;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #171430;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    box-shadow: 5px 5px 10px #171430;
+    background-color: #a9c7b0;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 45%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #171430;
+    font-size: 40px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    border: solid 3px #a9c7b0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+button:hover,
+input:hover {
+    border: solid 1px #171430;
+}

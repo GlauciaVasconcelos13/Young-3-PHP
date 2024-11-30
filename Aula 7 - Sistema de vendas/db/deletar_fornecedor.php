@@ -1,13 +1,12 @@
+<?php 
 
-<?php
-    require_once = '../connection/conn.php';
+    require_once '../connection/conn.php';
 
     $id = $_GET['id'];
     $sql_codigo = "DELETE FROM fornecedores WHERE id='$id'";
+
     if ($mysqli->query($sql_codigo) === TRUE){
-        header ('Location: ../screens/fornecedores/fornecedores.php');
+        header('location: ../screens/fornecedores/fornecedores_painel.php');
     }
-    else {
-        echo 'Erro ao atualizar' . $mysqli->error;
-    }
+    
 ?>

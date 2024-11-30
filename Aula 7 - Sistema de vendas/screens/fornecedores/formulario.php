@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fornecedores</title>
     <link rel="stylesheet" href="../../CSS/cadastro.css">
+    <script src="../../JS/script.js" defer></script>
 </head>
 <body>
     <main>
@@ -18,7 +19,7 @@
                 <input type="text" name="cidade" id="cidade" required>
             </div>
             <div class="botoes">
-                <button type="submit">Cadastrar</button>
+                <button class = "cadastrar-mais" type="submit">Cadastrar</button>
                 <button><a href="fornecedores_painel.php">Voltar</a></button>
             </div>
         </form>

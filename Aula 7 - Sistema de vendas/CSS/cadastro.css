@@ -28,7 +28,7 @@ form {
     font-weight: bold;
 }
 
-button {
+button{
     box-shadow: 5px 5px 10px #171430;
     background-color: #a9c7b0;
     padding: 10px;
@@ -41,7 +41,7 @@ button {
     cursor: pointer;
 }
 
-a {
+a{
     text-decoration: none;
     color: black;
 }

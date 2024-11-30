@@ -40,7 +40,7 @@
         <input type="text" name="user" placeholder = "Crie um usuário" required>
         <label for="">Senha</label>
         <input type="text" name="pass" placeholder = "Crie uma senha" required>
-        <input type="submit" id="cadastro" value = "Cadastrar">
+
         <input id = "cadastro" type="submit" value = "Cadastrar">
         
     </form>

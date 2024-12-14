@@ -43,6 +43,6 @@
         <input id = "cadastro" type="submit" value = "Cadastrar">
         
     </form>
-    <a href="../../" class = "add">Voltar</a>
+    <a href="../login/login.php" class = "add">Voltar</a>
 </body>
 </html>

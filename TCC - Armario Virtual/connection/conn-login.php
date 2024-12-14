@@ -20,12 +20,12 @@ $resultado = $mysqli->query($sql_check_db);
 if ($resultado->num_rows == 0) {
     $sql_codigo = "CREATE DATABASE $banco_de_dados";
     if ($mysqli->query($sql_codigo) === TRUE) {
-        echo 'Banco criado com sucesso';
+        // echo 'Banco criado com sucesso';
     } else {
         die("Erro ao criar o banco de dados: " . $mysqli->error);
     }
 } else {
-    echo "Banco de dados já existe! \n";
+    // echo "Banco de dados já existe! \n";
 }
 
 // SE CONECTA AO BANCO DE DADOS RECÉM CRIADO
@@ -59,12 +59,12 @@ foreach ($tabelas as $nome => $sql) {
 
     if ($resultado->num_rows == 0) {
         if ($mysqli->query($sql) === TRUE) {
-            echo "Tabela '$nome' criada com sucesso!<br>";
+            // echo "Tabela '$nome' criada com sucesso!<br>";
         } else {
-            echo "Erro ao criar tabela '$nome': " . $mysqli->error . "\n";
+            // echo "Erro ao criar tabela '$nome': " . $mysqli->error . "\n";
         }
     } else {
-        echo "Tabela '$nome' já existe<br>";
+        // echo "Tabela '$nome' já existe<br>";
     }
 }
 

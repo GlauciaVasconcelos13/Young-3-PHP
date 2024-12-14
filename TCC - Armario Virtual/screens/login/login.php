@@ -25,10 +25,10 @@
                 </div>
                 <div class="a">
                     <div>
-                        <a href="../../screens/menu.php">Entrar</a>
+                        <a href="../menu.php">Entrar</a>
                     </div>
                     <div>
-                        <a href="../../../cadastro/cadastrar.php">Cadastre-se e tenha uma vida glamurosa!</a>
+                        <a href="../cadastro/cadastrar.php">Cadastre-se e tenha uma vida glamurosa!</a>
                     </div>
                 </div>
             </form>

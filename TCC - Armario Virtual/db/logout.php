@@ -3,5 +3,5 @@
         session_start (); 
     }
     session_destroy();
-    header("Location: index.php?saiu_do_login");
+    header("Location:../screens/login/login.php?saiu_do_login");
 ?>

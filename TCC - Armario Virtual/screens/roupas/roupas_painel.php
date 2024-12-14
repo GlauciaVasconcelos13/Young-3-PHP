@@ -1,7 +1,9 @@
+<!-- SEM ERRO -->
+
 <?php
     include ('../../connection/conn-login.php');
     
-    $sql_codigo = 'SELECT * FROM itens';
+    $sql_codigo = 'SELECT * FROM roupas';
     $resultado = $mysqli->query($sql_codigo);
     
 ?>
@@ -11,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armário Virtual</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../CSS/roupas.css">
 </head>
 <body>
     <h1 class="titulo">
@@ -32,29 +34,30 @@
                 if ($resultado->num_rows >= 1){
                     while ($item = $resultado->fetch_assoc()){
                         echo '<tr class = "informacoes">';
-                            echo '<td>'.$item['Id'].'</td>';
-                            echo '<td>'.$item['Roupa do dia'].'</td>';
-                            echo '<td>'.$item['Data'].'</td>';
-                            echo '<td>'.$item['Estilo'].'</td>';
-                            echo '<td>'.$item['Quantidade'].'</td>';
-                            echo '<td>'.$item['Nome do evento'].'</td>';
-                            echo '<td> <a href = "../../db/deletar.php?id='.$item['Id'].'">Deletar</a> </td>';
-                            echo '<td> <a href = "../../db/editar.php?id='.$item['Id'].'">Editar</a> </td>';
+                            echo '<td>'.$item['id_pessoa'].'</td>';
+                            echo '<td>'.$item['roupa_do_dia'].'</td>';
+                            echo '<td>'.$item['data'].'</td>';
+                            echo '<td>'.$item['estilo'].'</td>';
+                            echo '<td>'.$item['quantidade'].'</td>';
+                            echo '<td>'.$item['nome_evento'].'</td>';
+                            echo '<td> <a href = "../../db/deletar.php?id='.$item['id_pessoa'].'">Deletar</a> </td>';
+                            echo '<td> <a href = "../../db/editar.php?id='.$item['id_pessoa'].'">Editar</a> </td>';
                         echo '</tr>';
                     }
                 }
             ?>
             <tr>
-                <td class = "add" colspan = "4">
+                <td class = "add" colspan="8" align="center">
                     <?php
                     echo '<a type "submit" class = "botao_add" href = "../../db/adicionar.php">Adicionar</a>';
                     ?>
                 </td>
+
             </tr>
             <tr>
-                <td class = "add" colspan = "4">
+                <td class = "add" colspan = "8"  align="center">
                     <?php
-                    echo '<a type "submit" class = "previsao" href = "../Previsao">Confira a previsão do tempo do dia!</a>';
+                    echo '<a type "submit" class = "previsao" href = "../../../Previsao/index.html">Confira a previsão do tempo do dia!</a>';
                     ?>
                 </td>
             </tr>

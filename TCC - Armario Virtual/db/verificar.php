@@ -1,7 +1,7 @@
 <!-- SEM ERRO -->
 
 <?php
-    include_once('../../Conexoes/conexao_sistema.php');
+    include_once('../connection/conn-login.php');
 
     session_start ();
 
@@ -9,7 +9,7 @@
     $senha = $_POST ['pass'];
 
     if(isset($usuario) && isset ($senha)) {
-        $sql_codigo = "SELECT * FROM cliente WHERE usuario = '$usuario' AND senha = '$senha'";
+        $sql_codigo = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha'";
 
         $sql_query = $mysqli->query($sql_codigo);
 
@@ -20,9 +20,9 @@
 
             $_SESSION['id'] = $resultado ['id'];
             
-            header('Location: ../../../roupas/painel.php?cadastrado=nao');}
+            header('Location: ../screens/roupas/roupas_painel?cadastrado=nao');}
         else{
-            header('Location: ../../../login/login.php?error');
+            header('Location: ../screens/login/login.php?error');
         }
     }
 ?>

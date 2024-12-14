@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.conteiner {
+    background-color: rgba(255, 255, 255, 0.779);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px gray;
+    text-align: center;
+}
+
+input[type= "text"]{
+    background-color: rgb(250, 252, 209);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid lightblue;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffd95c;
+}
+
+input::placeholder {
+    color: rgb(250,252,209);
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffd95c;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 5px gray;
+    margin: 10px;
+}
+
+button:hover {
+    box-shadow: 2.5px 2.5px 5px lightgreen;
+}
+
+div {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #aa903e;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.goldenrod{
+    color: goldenrod;
+}
+
+.turquoise {
+    color: turquoise;
+}

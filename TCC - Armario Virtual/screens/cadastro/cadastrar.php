@@ -27,7 +27,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Cliente</title>
-    <link rel="stylesheet" href="../CSS/style.css" type = "text/css">
+    <link rel="stylesheet" href="../../CSS/cadastrar.css" type = "text/css">
     <script src="../JS/script.js" defer></script>
 </head>
 <body class = "body">
@@ -43,6 +43,6 @@
         <input id = "cadastro" type="submit" value = "Cadastrar">
         
     </form>
-    <a href="index.php" class = "add">Voltar</a>
+    <a href="../../" class = "add">Voltar</a>
 </body>
 </html>

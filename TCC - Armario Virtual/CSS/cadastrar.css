@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(196, 244, 255);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+    font-weight: bold;
+    margin: 30px;
+}
+input {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 20px 0px 20px;
+}
+input:hover {
+    border: solid 1.5px rgba(254, 80, 216, 0.613);
+    border-radius: 10px;
+}
+#cadastro {
+    background-color: rgba(254, 80, 216, 0.613);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+form{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(143, 79, 143);
+}
+
+.add {
+    display: grid;
+    place-items: center;
+    background-color: rgba(254, 80, 216, 0.613);
+    border-radius: 10px;
+    top: 10px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Armário Virtual</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../CSS/login.css">
     <script src="script.js"defer></script>
 </head>
 <body>
@@ -23,11 +23,13 @@
                     <label for="" class="form-label">Senha:   </label>
                     <input type="pass" class="form-control" name = "pass" placeholder = "Digite a sua senha...">
                 </div>
-                <div>
-                    <button type="submit" class="botao"><a href="menu.php">Entrar</a></button>
-                </div>
-                <div>
-                    <button type="submit">Entre e tenha uma vida glamurosa!</button>
+                <div class="a">
+                    <div>
+                        <a href="../../screens/menu.php">Entrar</a>
+                    </div>
+                    <div>
+                        <a href="../../../cadastro/cadastrar.php">Cadastre-se e tenha uma vida glamurosa!</a>
+                    </div>
                 </div>
             </form>
         </div>

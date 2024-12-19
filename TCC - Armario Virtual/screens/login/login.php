@@ -13,7 +13,7 @@
             <div>
                 <h1>Armário Virtual</h1>
             </div>
-            <form action="../cadastro/cadastrar.php" class="campo_login" method ="post">
+            <form action="../verificar.php" class="campo_login" method ="post">
                 <h2>Sua vida fashion sendo muito mais prática!</h2>
                 <div>
                     <label for="" class="form-label">Usuário:   </label>

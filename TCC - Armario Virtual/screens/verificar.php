@@ -20,9 +20,9 @@
 
             $_SESSION['id'] = $resultado ['id'];
             
-            header('Location: ../screens/roupas/roupas_painel?cadastrado=nao');}
+            header('Location: ../roupas/roupas_painel.php?cadastrado=nao');}
         else{
-            header('Location: ../screens/login/login.php?error');
+            header('Location: ../login/login.php?error');
         }
     }
-?>
+?> 

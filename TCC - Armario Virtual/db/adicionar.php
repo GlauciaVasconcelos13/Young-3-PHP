@@ -32,7 +32,7 @@
 </head>
 <body class = "body">
     <h1>Adicionar Roupa</h1>
-    <form action="" method="post">
+    <form action="" method="post" id = "adicionar">
         <label for="">Roupa do dia</label>
         <input type="text" name="roupa" placeholder = "Digite o nome do item" required>
         <label for="">Data</label>
@@ -41,9 +41,9 @@
         <input type="text" name="evento" placeholder = "Digite qual será o evento do dia" required>
         <label for="">Estilo</label>
         <input type="text" name="estilo" placeholder = "Digite qual será o evento do dia" required>
+        <label for="">Quantidade</label>
         <input type="number" name="quantidade" placeholder = "Digite a quantidade de itens" required>
         <input class= "salvar" type="submit" value="Salvar" required>
-
     </form>
     <a href="../screens/roupas/roupas_painel.php" class = "add">Voltar</a>
 </body>

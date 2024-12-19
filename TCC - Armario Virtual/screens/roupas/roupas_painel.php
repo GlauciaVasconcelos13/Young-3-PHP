@@ -29,6 +29,7 @@
                 <th>Estilo</th>
                 <th>Quantidade</th>
                 <th>Nome do Evento</th>
+                <th>Ações</th>
             </tr>
             <?php
                 if ($resultado->num_rows >= 1){

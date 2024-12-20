@@ -20,7 +20,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Cliente</title>
     <link rel="stylesheet" href="../../CSS/cadastrar.css" type = "text/css">
-    <script src="../JS/script.js" defer></script>
+    <script src="../../JS/script.js" defer></script>
 </head>
 <body class = "body">
     <h1>Cadastro</h1>

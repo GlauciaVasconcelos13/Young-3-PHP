@@ -40,6 +40,21 @@ a{
     color: black;
     text-decoration: none;
 }
+.entrar {
+    margin: 20px 0px 0px 0px;
+    padding: 6px;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+}
 
 .campo_login{
     background-color: #b9e6c6a8;

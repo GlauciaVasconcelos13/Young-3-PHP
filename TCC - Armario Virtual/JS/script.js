@@ -1,8 +1,21 @@
-let botao = document.getElementById ('botao')
+let botao = document.getElementById('cadastro');
+let voltar = document.getElementsByClassName('add')[0];
 
-botao[0].addEventListener('click', clicar)
+botao.addEventListener('click', clicar);
+voltar.addEventListener('click', voltarFunc);
 
-function clicar()
-{
-    alert ('Você tem certeza? Se sim, clique em OK!')
+function clicar() {
+    if (confirm('Você tem certeza? Se sim, clique em OK!')) {
+        alert('Cadastro confirmado!');
+    } else {
+        alert('Cadastro cancelado!');
+    }
+}
+
+function voltarFunc() {
+    if (confirm('Tem certeza que quer voltar?')) {
+        alert('Você voltou!');
+    } else {
+        alert('Você não voltou!');
+    }
 }

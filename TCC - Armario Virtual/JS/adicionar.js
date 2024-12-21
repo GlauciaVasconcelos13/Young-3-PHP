@@ -1,4 +1,4 @@
-let botao = document.getElementById('salvar');
+let botao = document.getElementsByClassName('salvar');
 let voltar = document.getElementsByClassName('add')[0];
 
 botao.addEventListener('click', clicar);

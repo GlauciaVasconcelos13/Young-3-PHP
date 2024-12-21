@@ -14,7 +14,7 @@
         $sql_codigo = "INSERT INTO roupas (roupa_do_dia,data,nome_evento,estilo,quantidade) VALUES('$roupa','$data', '$evento', '$estilo', '$quantidade')";
 
         if ($mysqli->query($sql_codigo) === TRUE){
-            header ('Location: ../screens/roupas/roupas_painel');
+            header ('Location: ../screens/roupas/roupas_painel.php');
 
         }
         else {
@@ -29,6 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Itens</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../../JS/adicionar.js" defer></script>
 </head>
 <body class = "body">
     <h1>Adicionar Roupa</h1>

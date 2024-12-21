@@ -54,6 +54,7 @@ a{
     flex-direction: column;
     color: black;
     text-decoration: none;
+    width: 100%;
 }
 
 .campo_login{
